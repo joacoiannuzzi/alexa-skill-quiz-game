@@ -1,0 +1,101 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "quiz game",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "answer_slot"
+                        }
+                    ],
+                    "samples": [
+                        "the answer is {Answer}",
+                        "my answer is {Answer}",
+                        "is it {Answer}",
+                        "{Answer} is my answer",
+                        "{Answer}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": [
+                        "start game",
+                        "new game",
+                        "start",
+                        "start new game"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "answer_slot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "a",
+                                "synonyms": [
+                                    "A",
+                                    "A.",
+                                    "a."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "b",
+                                "synonyms": [
+                                    "B",
+                                    "B.",
+                                    "b."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "c",
+                                "synonyms": [
+                                    "C",
+                                    "C.",
+                                    "c."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "d",
+                                "synonyms": [
+                                    "D",
+                                    "D.",
+                                    "d."
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
